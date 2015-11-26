@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:backgroundTint="#ff78ffd3"
+    android:background="@drawable/bluebg">
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button2"
+        android:theme="@style/Base.V14.Theme.AppCompat.Light.Dialog">
+
+        <RadioButton
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:text="2 Player"
+            android:id="@+id/rb1"
+            android:checked="true"
+            android:layout_below="@+id/textView"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:text="1 Player"
+            android:id="@+id/rb2"
+            android:layout_below="@+id/rb1"
+            android:layout_alignLeft="@+id/rb1"
+            android:layout_alignStart="@+id/rb1"
+            android:checked="false"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:text="BT multiplayer"
+            android:id="@+id/rb3"
+            android:checked="false"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select GAME type"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:textColorHighlight="#ffff1798"
+        android:textSize="35sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/button2"
+        android:onClick="select"
+        android:textSize="40sp"
+        android:textColor="#ffff1d73"
+        android:textColorHighlight="#ff4a91ff"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_marginBottom="151dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

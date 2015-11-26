@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:drawable/ic_dialog_dialer"
+    android:backgroundTint="@android:color/holo_purple">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="!!!!!CONGRATULATIONS!!!!"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:textColor="#ffff1d73" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tv"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/Animation.Translucent"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:textSize="60sp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textColor="#ff0014ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:id="@+id/button38"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:onClick="playagain"
+        android:background="@android:drawable/button_onoff_indicator_on" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:id="@+id/button39"
+        android:onClick="exit"
+        android:layout_below="@+id/button38"
+        android:layout_alignLeft="@+id/button38"
+        android:layout_alignStart="@+id/button38"
+        android:layout_marginTop="57dp" />
+</RelativeLayout>
